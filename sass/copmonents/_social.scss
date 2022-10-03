@@ -1,0 +1,24 @@
+.social {
+	margin-left: 70px;
+}
+.social__title,
+.subscription__title {
+	margin-bottom: 20px;
+
+	@include font(700, 14px, 1.14, null);
+
+	text-transform: uppercase;
+
+	color: var(--primary-white-color);
+}
+
+.footer__soc-link {
+	color: var(--primary-white-color);
+	background-color: rgba(255, 255, 255, 0.1);
+
+	&:hover,
+	&:focus {
+		background-color: var(--accent-color);
+		outline: none;
+	}
+}

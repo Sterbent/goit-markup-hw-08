@@ -1,0 +1,24 @@
+.logo {
+	@include flexCentering(flex, null, center);
+	font-family: "Raleway", sans-serif;
+
+	@include font(700, 26px, 1.19, null);
+	outline: 2px solid transparent;
+	@include transition(outline);
+
+	&:focus {
+		outline: 2px solid var(--accent-color);
+	}
+
+	&__text {
+		color: var(--accent-color);
+	}
+}
+
+.navigation__logo {
+	color: var(--title-text-color);
+}
+
+.footer__logo {
+	color: var(--primary-white-color);
+}

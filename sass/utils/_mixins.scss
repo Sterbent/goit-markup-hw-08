@@ -1,0 +1,25 @@
+@mixin background($bgr: no-repeat, $bgs: cover, $bgp: center) {
+	background-repeat: $bgr;
+	background-size: $bgs;
+	background-position: $bgp;
+}
+@mixin centering($ml: auto, $mr: auto) {
+	margin-left: $ml;
+	margin-right: $mr;
+}
+@mixin flexCentering($df: flex, $jc: center, $ai: center) {
+	display: $df;
+	justify-content: $jc;
+	align-items: $ai;
+}
+@mixin font($fw, $fs, $lh, $ls) {
+	font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh;
+	letter-spacing: $ls;
+}
+@mixin transition($trpr...) {
+	transition-property: $trpr;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

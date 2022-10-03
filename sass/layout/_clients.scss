@@ -1,0 +1,31 @@
+.clients-list {
+	display: flex;
+	margin-top: 50px;
+}
+
+.clients-list__item {
+	width: 170px;
+	height: 92px;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+.clients-list__link {
+	@include flexCentering;
+	width: 100%;
+	height: 100%;
+	border: 1px solid var(--icons-fill);
+	border-radius: 4px;
+
+	color: var(--icons-fill);
+
+	@include transition(color, border-color);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+		border-color: var(--accent-color);
+		outline: none;
+	}
+}

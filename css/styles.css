@@ -1,0 +1,81 @@
+body {
+	background-color: var(--primary-bg-color);
+
+	color: var(--primary-text-color);
+	font-family: "roboto", "raleway", sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+p {
+	margin: 0;
+}
+img {
+	display: block;
+}
+
+.list {
+	list-style: none;
+}
+.link {
+	text-decoration: none;
+}
+.title {
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: var(--title-text-color);
+}
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+/* ---------------------------HOVER & FOCUS----------------- */
+.nav-list-link:hover,
+.nav-list-link:focus,
+.contacts-list-link:hover,
+.contacts-list-link:focus,
+.adress-list-link:hover,
+.adress-list-link:focus,
+.place-link:hover,
+.place-link:focus {
+	color: var(--accent-color);
+	outline: none;
+}
+/* --------------------------------HEADER------------------ */
+
+/* --------------------------------HERO------------------ */
+
+/* --------------------------------ОСОБЕННОСТИ------------------ */
+
+/* --------------------------------ЧЕМ ЗАНИМАЕМСЯ------------------ */
+
+/* --------------------------------НАША КОМАНДА------------------ */
+
+/* --------------------------------КЛИЕНТЫ------------------ */
+
+/* --------------------------------FOOTER------------------ */
+
+/* --------------------------------PORTFOLIO------------------ */
+
+/* --------------------------------MODAL------------------ */

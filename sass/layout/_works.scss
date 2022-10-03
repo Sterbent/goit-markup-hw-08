@@ -1,0 +1,26 @@
+.works-list {
+	display: flex;
+	margin-left: -30px;
+	margin-top: 50px;
+}
+.works-list__item {
+	position: relative;
+	margin-left: 30px;
+
+	flex-basis: calc(100% / 3 - 30px);
+}
+.works-list__overlay {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+	padding: 27px 0;
+
+	@include font(700, null, 1.14, null);
+	text-align: center;
+
+	text-transform: uppercase;
+
+	background-color: rgba(47, 48, 58, 0.8);
+	color: var(--primary-white-color);
+}

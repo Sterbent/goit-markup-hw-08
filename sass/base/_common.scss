@@ -1,0 +1,15 @@
+body {
+	background-color: var(--primary-bg-color);
+
+	color: var(--primary-text-color);
+	font-family: "roboto", "raleway", sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+}
+
+.list {
+	list-style: none;
+}
+.link {
+	text-decoration: none;
+}

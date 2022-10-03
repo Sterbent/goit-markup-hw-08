@@ -1,0 +1,38 @@
+.subscription {
+	margin-left: auto;
+}
+
+.subscription__wrap {
+	display: flex;
+}
+
+.subscription__area {
+	padding-left: 16px;
+
+	width: 358px;
+	height: 50px;
+
+	color: var(--primary-bg-color);
+
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: transparent;
+	@include transition(border-color);
+
+	&:focus,
+	&:hover {
+		outline: transparent;
+		border: 1px solid var(--accent-color);
+	}
+}
+
+.subscription__wrap {
+	display: flex;
+}
+
+.subscription__btn {
+	margin-left: 12px;
+
+	@include flexCentering;
+}
