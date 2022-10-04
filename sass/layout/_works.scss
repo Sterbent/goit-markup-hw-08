@@ -1,13 +1,18 @@
+.section.works {
+	@media screen and (min-width: 320px) and (max-width: 1199px) {
+		display: none;
+	}
+}
 .works-list {
 	display: flex;
-	margin-left: -30px;
+
+	gap: 30px;
 	margin-top: 50px;
 }
 .works-list__item {
 	position: relative;
-	margin-left: 30px;
 
-	flex-basis: calc(100% / 3 - 30px);
+	flex-basis: calc((100% - 2 * 30px) / 3);
 }
 .works-list__overlay {
 	position: absolute;

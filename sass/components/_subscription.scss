@@ -1,0 +1,59 @@
+.subscription {
+}
+
+.subscription__wrap {
+	@media screen and (max-width: 1199px) {
+		align-items: center;
+	}
+	@include desktop {
+		display: flex;
+	}
+}
+
+.subscription__area {
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 20px;
+	}
+	padding-left: 16px;
+
+	width: 100%;
+	@include tablet {
+		width: 450px;
+	}
+	@include desktop {
+		width: 358px;
+	}
+
+	height: 50px;
+
+	color: var(--primary-bg-color);
+
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: transparent;
+	@include transition(border-color);
+
+	&:focus,
+	&:hover {
+		outline: transparent;
+		border: 1px solid var(--accent-color);
+	}
+}
+
+.subscription__wrap {
+	display: flex;
+	@media screen and (max-width: 1199px) {
+		flex-direction: column;
+	}
+}
+
+.subscription__btn {
+	margin-left: 12px;
+
+	@include flexCentering;
+}
+
+.btn__text {
+	margin-right: 10px;
+}

@@ -1,0 +1,59 @@
+.footer {
+	background-color: var(--hero-bg-color);
+	padding: 60px 0;
+}
+.footer__container {
+	text-align: center;
+	display: flex;
+	@media screen and (max-width: 699px) {
+		flex-direction: column;
+		gap: 60px;
+	}
+	@include tablet {
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-around;
+	}
+	@include desktop {
+		justify-content: space-between;
+	}
+}
+
+.adress {
+	margin-top: 20px;
+}
+
+.adress-wrap {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin-bottom: 60px;
+	}
+	@include desktop {
+		text-align: left;
+	}
+}
+
+.adress__item:not(:last-child) {
+	margin-bottom: 8px;
+	@include desktop {
+		margin-bottom: 9px;
+	}
+}
+
+.adress__link {
+	color: var(--contacts-text-color);
+
+	line-height: 1.71;
+	font-style: normal;
+	@include transition(color);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+		outline: none;
+	}
+}
+.adress__link--special {
+	color: var(--primary-bg-color);
+	line-height: 1.71;
+	font-style: normal;
+}

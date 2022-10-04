@@ -1,7 +1,21 @@
 .filter {
-	@include flexCentering;
+	margin-bottom: 30px;
 
-	margin-bottom: 50px;
+	@media screen and (min-width: 320px) and (max-width: 767px) {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 8px;
+		row-gap: 15px;
+	}
+
+	@include tablet {
+		@include flexCentering;
+		margin-bottom: 40px;
+		gap: 8px;
+	}
+	@include desktop {
+		margin-bottom: 50px;
+	}
 }
 
 .filter__btn {
@@ -30,25 +44,28 @@
 	}
 }
 
-.filter__item + .filter__item {
-	margin-left: 8px;
-}
 .portfolio-list {
 	display: flex;
 	flex-wrap: wrap;
-	margin: -15px;
+
+	gap: 30px;
 }
 
 .portfolio-list__item {
-	flex-basis: calc(100% / 3 - 30px);
-
-	margin: 15px;
+	@include tablet {
+		flex-basis: calc((100% - 30px) / 2);
+	}
+	@include desktop {
+		flex-basis: calc((100% - 60px) / 3);
+	}
 }
 
 .portfolio-list__content {
 	padding: 20px 24px;
 	border: 1px solid #eeeeee;
 	border-top: none;
+
+	flex-grow: 1;
 }
 
 .portfolio-list__title {
@@ -60,12 +77,15 @@
 }
 
 .portfolio-list__text {
-	@include font(null, 16px, 1.18, 0.03em);
+	@include font(null, 16px, 1.875, 0.03em);
 
 	color: var(--primary-text-color);
 }
 .portfolio-list__link {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
 	@include transition(box-shadow);
 
 	&:hover,

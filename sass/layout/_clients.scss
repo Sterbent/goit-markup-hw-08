@@ -1,15 +1,24 @@
 .clients-list {
 	display: flex;
-	margin-top: 50px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 30px;
+	@include desktop {
+		margin-top: 50px;
+	}
+	gap: 30px;
 }
 
 .clients-list__item {
-	width: 170px;
-	height: 92px;
+	flex-basis: calc((100% - 30px) / 2);
 
-	&:not(:last-child) {
-		margin-right: 30px;
+	@include tablet {
+		flex-basis: calc((100% - 60px) / 3);
 	}
+	@include desktop {
+		flex-basis: calc((100% - 5 * 30px) / 6);
+	}
+	height: 92px;
 }
 .clients-list__link {
 	@include flexCentering;
